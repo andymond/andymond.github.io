@@ -1,5 +1,6 @@
 body {
   background-image: url("./images/funky-lines/funky-lines.png");
+  padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +10,11 @@ a {
   color: #000000;
   text-decoration: none;
   font-family: 'Merriweather Sans', sans-serif;
+}
+
+a:hover {
+  color: #ff836d;
+  cursor: pointer;
 }
 
 h1 {
@@ -22,12 +28,12 @@ h2 {
 
 p {
   font-family: 'Nunito', sans-serif;
+  font-size: 18px;
 }
 
 .outer-image {
-  height: 330px;
-  width: 330px;
-  margin: 30px;
+  height: 300px;
+  width: 300px;
   overflow: hidden;
 }
 
@@ -36,16 +42,61 @@ p {
 }
 
 .social-media-bar {
-    width: 350px;
+    margin: 10px;
+    width: 250px;
     display: flex;
     justify-content: space-around;
 }
 
 .fab {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .dymond-headshot {
-  height: 417px;
-  width: 329px;
+  height: 380px;
+  width: 300px;
+}
+
+.about-blurb {
+  text-align: center;
+  width: 500px;
+}
+
+.portfolio-nav {
+  width: 400px;
+  position: sticky;
+  top: 15px;
+  z-index: 10;
+  padding: 10px;
+  background-image: url('./images/exclusive_paper/exclusive_paper.png');
+}
+
+.projects, #skills, #resume, #contact {
+  background-color: #ffffffdA;
+  width: 90vw;
+  height: 95vh;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#skills {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#skills h4 {
+  text-align: center;
+}
+
+.skillset  {
+  margin: 15px;
+}
+
+#resume {
+  overflow-y: scroll;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: black;
+    font-size: 30px;
 }
