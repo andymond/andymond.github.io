@@ -1,0 +1,51 @@
+body {
+  background-image: url("./images/funky-lines/funky-lines.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 36px;
+}
+
+h2 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+}
+
+.outer-image {
+  height: 330px;
+  width: 330px;
+  margin: 30px;
+  overflow: hidden;
+}
+
+.contact-info {
+
+}
+
+.social-media-bar {
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fab {
+  font-size: 60px;
+}
+
+.dymond-headshot {
+  height: 417px;
+  width: 329px;
+}
