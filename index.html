@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Nunito|Nunito+Sans" rel="stylesheet">
@@ -40,7 +41,7 @@
     </nav>
 
     <section id="projects-carousel" class="projects">
-      <div class="project-example" style="overflow: hidden;">
+      <div class="project-example" >
         <h2 class="m1">RecipeResource</h2>
         <p>Multitenant recipe management app</p>
         <p>Stack: Ruby on Rails, PostgreSQL, HTML5/SASS/BASSCSS, JavaScript/jQuery, Google OAuth2, yelp! API</p>
@@ -60,8 +61,23 @@
         <h2 class="m1">APICurious</h2>
         <p>GitHub Profile Page recreated by consuming the GitHub API</p>
         <p>Stack: Ruby on Rails, HTML/SASS/BASSCSS, GitHub API, GitHub OAuth</p>
-        <a href="https://github.com/andymond/apicurious" style="margin: 0px auto;">View on GitHub</a>
+        <a href="https://github.com/andymond/apicurious">View on GitHub</a>
         <img src="stylesheets/images/apicurious.png" alt="" class="border rounded">
+      </div>
+      <div class="project-example">
+        <h2 class="m1">BikeShare</h2>
+        <p>Application to provide users with analytics of a San Francisco area bicyle sharing program and local weather history</p>
+        <p>Application also has a store where users can purchase various items managed by the site admin</p>
+        <p>Stack: Ruby on Rails, HTML/SASS, PostgreSQL</p>
+        <a href="https://github.com/amj133/bike-share">View on GitHub</a>
+        <img src="stylesheets/images/bikeshare.png" alt="" class="border rounded">
+      </div>
+      <div class="project-example">
+        <h2 class="m1">Town Bizzare</h2>
+        <p>First web app, created a marketplace for users to browse vendors and their wares</p>
+        <p>Stack: Sinatra, HTML/CSS, PostgreSQL, Google Charts</p>
+        <a href="https://github.com/andymond/little-shop-redux">View on GitHub</a>
+        <img src="stylesheets/images/town_bizzare.png" alt="" class="border rounded">
       </div>
     </section>
 
@@ -92,14 +108,16 @@
           <li>Leadership</li>
           <li>Teamwork</li>
           <li>Communication</li>
-          <li>ClojureScript / ReFrame</li>
           <li>Elixir / Phoenix</li>
+          <li>ClojureScript / ReFrame</li>
         </ul>
       </div>
     </section>
 
     <section id="resume">
-      <img src="stylesheets/images/dymond_resume.png" alt="">
+      <a href="https://www.dropbox.com/s/fw7sxut2oxs1ziz/Dymond_Developer_Resume.pdf?dl=0">
+        <img src="stylesheets/images/dymond_resume.png" alt="" style="max-width: 95%">
+      </a>
     </section>
 
     <section id="contact" class="flex flex-column items-center justify-center">

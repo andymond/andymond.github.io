@@ -1,5 +1,14 @@
 $(document).ready(function(){
-  $('.projects').slick();
+  $('.projects').slick({
+    dots: true,
+    infinite: true,
+    speed: 700,
+    autoplay: false,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+ });
+
   $("#scrollto-landing").click(function() {
     $('html, body').animate({
         scrollTop: $("#portfolio-landing").offset().top

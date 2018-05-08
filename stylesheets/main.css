@@ -1,121 +1,276 @@
-body {
-  background-image: url("./images/funky-lines/funky-lines.png");
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+@media only screen and (max-width: 600px) {
 
-a, span {
-  color: #000000;
-  text-decoration: none;
-  font-family: 'Merriweather Sans', sans-serif;
-}
+  * {
+    max-width: 100vw;
+  }
 
-a:hover {
-  color: #ff836d;
-  cursor: pointer;
-}
-
-h1 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 36px;
-}
-
-h2 {
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-p {
-  font-family: 'Nunito', sans-serif;
-  font-size: 18px;
-}
-
-.outer-image {
-  height: 300px;
-  width: 300px;
-  overflow: hidden;
-}
-
-.social-media-bar {
-    margin: 10px;
-    width: 250px;
+  body {
+    background-image: url("./images/funky-lines/funky-lines.png");
+    padding: 5px;
+    margin: 0px;
+    word-wrap: break-word;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body, section {
+    width: 100vw;
+  }
+
+  a, span {
+    color: #000000;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 3px;
+  }
+
+  a:hover {
+    color: #ff836d;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1em;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  p {
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9em;
+  }
+
+  .outer-image {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .social-media-bar {
+      margin: 10px;
+      width: 250px;
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .fab {
+    font-size: 2em;
+  }
+
+  .dymond-headshot {
+    height: 253px;
+    width: 200px;
+  }
+
+  .about-blurb {
+    text-align: center;
+    width: 500px;
+  }
+
+  .portfolio-nav {
+    position: sticky;
+    top: 15px;
+    z-index: 10;
+    padding: 5px;
+    margin: 1px;
+    background-image: url('./images/exclusive_paper/exclusive_paper.png');
+  }
+
+  #skills, #resume, #contact {
+    background-color: #ffffffdA;
+    width: 90vw;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 3px;
+  }
+
+  .projects, a#scrollto-projects {
+    display: none;
+  }
+
+  #portfolio-landing {
+    height: 95vh;
+    font-size: 0.85em;
+  }
+
+  #skills {
+    flex-direction: column;
+    font-size: 0.75em;
+  }
+
+  #skills div:first-child {
+    margin-top: 20px;
+  }
+
+  #skills div {
+    margin: 0px;
+  }
+
+  #skills, #contact {
+    min-height: 95vh;
+  }
+
+  #skills {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  #skills h4 {
+    text-align: center;
+  }
+
+  .skillset  {
+    margin: 15px;
+  }
+
+  #resume {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #resume embed {
+    border: 1px solid black;
+  }
+
 }
 
-.fab {
-  font-size: 40px;
-}
+@media only screen and (min-width: 600px) {
+  body {
+    background-image: url("./images/funky-lines/funky-lines.png");
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.dymond-headshot {
-  height: 380px;
-  width: 300px;
-}
+  a, span {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Merriweather Sans', sans-serif;
+  }
 
-.about-blurb {
-  text-align: center;
-  width: 500px;
-}
+  a:hover {
+    color: #ff836d;
+    cursor: pointer;
+  }
 
-.portfolio-nav {
-  width: 400px;
-  position: sticky;
-  top: 15px;
-  z-index: 10;
-  padding: 10px;
-  background-image: url('./images/exclusive_paper/exclusive_paper.png');
-}
+  h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 36px;
+  }
 
-.projects, #skills, #resume, #contact {
-  background-color: #ffffffdA;
-  width: 90vw;
-  margin: 15px;
-  padding: 15px;
-  border-radius: 3px;
-}
+  h2 {
+    font-family: 'Nunito Sans', sans-serif;
+  }
 
-#skills, #contact {
-  min-height: 95vh;
-}
+  p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+  }
 
-.project-example {
-  overflow: hidden;
-}
+  .outer-image {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+  }
 
-.project-example img {
-  width: 90%;
-  margin: 5px auto;
-}
+  .social-media-bar {
+      margin: 10px;
+      width: 250px;
+      display: flex;
+      justify-content: space-around;
+  }
 
-.project-example a {
-  display: block;
-  width: 200px;
-  margin: 0px auto;
-}
+  .fab {
+    font-size: 40px;
+  }
 
-.project-example p {
-  font-size: 16px;
-  margin: 10px;
-}
+  .dymond-headshot {
+    height: 380px;
+    width: 300px;
+  }
 
-#skills {
-  font-family: 'Nunito Sans', sans-serif;
-}
+  .about-blurb {
+    text-align: center;
+    width: 500px;
+  }
 
-#skills h4 {
-  text-align: center;
-}
+  .portfolio-nav {
+    width: 400px;
+    position: sticky;
+    top: 15px;
+    z-index: 10;
+    padding: 10px;
+    background-image: url('./images/exclusive_paper/exclusive_paper.png');
+  }
 
-.skillset  {
-  margin: 15px;
-}
+  .projects, #skills, #resume, #contact {
+    background-color: #ffffffdA;
+    width: 90vw;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 3px;
+  }
 
-#resume {
-  overflow-y: scroll;
-}
+  #resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.slick-prev:before, .slick-next:before {
-    color: black;
-    font-size: 24px;
+  #skills, #contact {
+    min-height: 95vh;
+  }
+
+  .project-example {
+    overflow: hidden;
+  }
+
+  .project-example img {
+    width: 90%;
+    margin: 5px auto;
+  }
+
+  .project-example a {
+    display: block;
+    width: 200px;
+    margin: 0px auto;
+  }
+
+  .project-example p {
+    font-size: 16px;
+    margin: 10px;
+  }
+
+  #skills {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  #skills h4 {
+    text-align: center;
+  }
+
+  .skillset  {
+    margin: 15px;
+  }
+
+  #resume {
+    overflow-y: scroll;
+  }
+
+  .slick-prev:before, .slick-next:before {
+      color: black;
+      font-size: 24px;
+  }
 }
