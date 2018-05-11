@@ -78,6 +78,7 @@
 
   .portfolio-nav {
     position: sticky;
+    position: -webkit-sticky;
     top: 15px;
     z-index: 10;
     padding: 5px;
@@ -182,6 +183,7 @@
 
   .outer-image {
     height: 300px;
+    min-height: 300px;
     width: 300px;
     overflow: hidden;
   }
@@ -210,10 +212,17 @@
   .portfolio-nav {
     width: 400px;
     position: sticky;
+    position: -webkit-sticky;
     top: 15px;
     z-index: 10;
     padding: 10px;
     background-image: url('./images/exclusive_paper/exclusive_paper.png');
+  }
+
+  #portfolio-landing {
+    height: 90vh;
+    min-height: 642px;
+    font-size: 0.85em;
   }
 
   .projects, #skills, #resume, #contact {
