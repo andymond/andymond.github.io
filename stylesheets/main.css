@@ -66,11 +66,6 @@
     font-size: 2em;
   }
 
-  .dymond-headshot {
-    height: 253px;
-    width: 200px;
-  }
-
   .about-blurb {
     text-align: center;
     width: 500px;
@@ -243,6 +238,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+
+  #resumeiframe {
+    max-width: 90vw;
   }
 
   #resume img {
