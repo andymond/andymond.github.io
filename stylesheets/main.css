@@ -292,7 +292,7 @@ a:hover { color: var(--green); }
 p { padding: 0; font-family: inherit; font-size: 1rem; }
 .wrap { width: min(1100px, calc(100% - 48px)); margin-inline: auto; }
 .site-header { height: 76px; width: min(1240px, calc(100% - 48px)); margin: auto; display: flex; align-items: center; justify-content: space-between; }
-.wordmark { font-family: Georgia, serif; font-size: 1.12rem; font-weight: 500; text-decoration: none; letter-spacing: -.03em; }
+.wordmark { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 1.12rem; font-weight: 500; text-decoration: none; letter-spacing: -.03em; }
 nav, .social-links { display: flex; gap: clamp(16px, 3vw, 34px); }
 nav a, .social-links a { color: var(--muted); font-size: .9rem; text-decoration: none; }
 .hero { min-height: 570px; padding-block: 82px 90px; display: grid; grid-template-columns: minmax(0, 850px); align-items: center; }
@@ -308,13 +308,13 @@ h1, h2, h3, p { margin-top: 0; }
 .social-links { gap: 20px; }
 .work-section { padding-block: 84px 92px; border-block: 1px solid var(--line); background: transparent; }
 .section-heading { margin-bottom: 28px; }
-.section-heading h2, .about-section h2, .contact-inner h2 { margin-bottom: 0; font-family: Georgia, serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 500; line-height: 1.1; letter-spacing: -.045em; }
+.section-heading h2, .about-section h2, .contact-inner h2 { margin-bottom: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 500; line-height: 1.1; letter-spacing: -.045em; }
 .project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .project-card { overflow: hidden; border: 0; border-top: 2px solid var(--ink); border-radius: 0; background: transparent; }
 .project-card img { display: block; width: 100%; height: 185px; object-fit: cover; background: #dfe5df; }
 .card-copy { padding: 18px 4px; }
 .card-copy .eyebrow { margin-bottom: 8px; font-size: .65rem; }
-.card-copy h3 { margin-bottom: 8px; font-family: Georgia, serif; font-size: 1.35rem; font-weight: 500; letter-spacing: -.03em; }
+.card-copy h3 { margin-bottom: 8px; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 1.35rem; font-weight: 500; letter-spacing: -.03em; }
 .card-copy p:not(.eyebrow) { min-height: 78px; margin-bottom: 16px; color: var(--muted); font-size: .93rem; }
 .card-copy a { color: var(--green); font-size: .9rem; font-weight: 700; }
 .more-work { margin-top: 25px; padding: 18px 0; border-top: 1px solid #cbd4cb; border-bottom: 1px solid #cbd4cb; }
@@ -374,7 +374,7 @@ h1, h2, h3, p { margin-top: 0; }
 .journey-heading { padding-bottom: 42px; border-bottom: 1px solid var(--line); }
 .journey-heading h1 { max-width: 740px; font-family: Georgia, serif; font-size: clamp(2.8rem, 6vw, 4.6rem); font-weight: 500; letter-spacing: -.04em; }
 .journey-timeline section { padding: 30px 0 22px; border-bottom: 1px solid var(--line); }
-.journey-timeline h2, .early-builds h2 { margin-bottom: 10px; font-family: Georgia, serif; font-size: 1.5rem; font-weight: 500; letter-spacing: -.035em; }
+.journey-timeline h2, .early-builds h2 { margin-bottom: 10px; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 1.5rem; font-weight: 500; letter-spacing: -.035em; }
 .journey-timeline section p:not(.eyebrow) { max-width: 680px; color: var(--muted); }
 .early-builds { padding-top: 54px; }
 .journey-projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 22px; }
