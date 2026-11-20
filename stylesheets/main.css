@@ -378,10 +378,12 @@ h1, h2, h3, p { margin-top: 0; }
 .journey-heading { padding-bottom: 42px; border-bottom: 1px solid var(--line); }
 .journey-heading h1 { max-width: 740px; font-family: Georgia, serif; font-size: clamp(2.8rem, 6vw, 4.6rem); font-weight: 500; letter-spacing: -.04em; }
 .journey-timeline section { padding: 30px 0 22px; border-bottom: 1px solid var(--line); }
-.journey-timeline h2, .early-builds h2 { margin-bottom: 10px; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 1.5rem; font-weight: 500; letter-spacing: -.035em; }
+.journey-timeline h2 { margin-bottom: 10px; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 1.5rem; font-weight: 500; letter-spacing: -.035em; }
 .journey-timeline section p:not(.eyebrow) { max-width: 680px; color: var(--muted); }
-.early-builds { padding-top: 54px; }
-.journey-projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 22px; }
+.student-projects { margin-top: 18px; }
+.student-projects summary { width: fit-content; color: var(--green); cursor: pointer; font-weight: 700; text-underline-offset: .2em; }
+.student-projects summary:hover { text-decoration: underline; }
+.journey-projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 14px; }
 .journey-projects a { overflow: hidden; border: 0; border-top: 2px solid var(--ink); border-radius: 0; background: transparent; font-size: .85rem; font-weight: 500; text-decoration: none; }
 .journey-projects img { display: block; width: 100%; height: 150px; object-fit: cover; }
 .journey-projects span { display: block; padding: 13px; }
