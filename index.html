@@ -1,180 +1,104 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Nunito|Nunito+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Andy Dymond is a staff software engineer building full-stack products and reliable systems.">
+    <meta name="theme-color" content="#f5f5f2">
+    <title>Andy Dymond — Staff Software Engineer</title>
     <link rel="stylesheet" href="stylesheets/main.css">
-    <title>Andy Dymond</title>
   </head>
-
   <body>
-    <section id="portfolio-landing" class="flex flex-column items-center">
-      <h1 class="mt1 mb0">Andy Dymond</h1>
-      <h2 class="m1">Full Stack Developer</h3>
-      <div class="outer-image circle">
-        <img src="stylesheets/images/dymond_headshot_medium.jpg" alt="Andy Dymond Headshot" class="dymond-headshot">
-      </div>
-      <div class="social-media-bar">
-        <a href="https://www.linkedin.com/in/andydymond/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/andymond"><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com/a__dymond"><i class="fab fa-twitter"></i></a>
-        <a href="https://medium.com/@andy.dymond"><i class="fab fa-medium-m"></i></a>
-      </div>
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top">Andy Dymond</a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-      <summary class="about-blurb">
-        <p>Turing School of Software & Design, Backend Program</p>
-        <p>I love exploring new technologies, and am particularly interested in working with apps and companies that make an effort to stay socially conscious.</p>
-      </summary>
-    </section>
-
-    <nav class="portfolio-nav m2 flex justify-around">
-      <a id="scrollto-landing">Home</a>
-      <a id="scrollto-projects">Projects</a>
-      <a id="scrollto-skills">Skills</a>
-      <a id="scrollto-resume">Resume</a>
-      <a id="scrollto-contact">Contact</a>
-    </nav>
-
-    <section id="projects-carousel" class="projects">
-      <div class="project-example" >
-        <h2 class="m1">Dobot</h2>
-        <p>Goal Based Savings Application (Where I work now!)</p>
-        <p>Work to maintain static website, Ruby on Rails REST Api & Management Portal, and iOS Application</p>
-        <div class="project-links">
-          <p>Privately owned code</p>
+    <main>
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Denver, Colorado · Staff Software Engineer</p>
+          <h1 id="hero-title">I build thoughtful software for real people.</h1>
+          <p class="intro">Full-stack product engineering at scale, with a focus on Ruby on Rails, TypeScript, event-driven systems, and making complex domains easier to work in.</p>
+          <div class="actions">
+            <a class="button" href="#work">Explore selected work</a>
+            <a class="text-link" href="assets/andy-dymond-resume.pdf" download>Download résumé <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="social-links" aria-label="Social profiles">
+            <a href="https://github.com/andymond" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/andydymond/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:andy.dymond@gmail.com">Email</a>
+          </div>
         </div>
-        <img src="stylesheets/images/dobot-static-site.png" alt="BenchScraper Screenshot" class="border rounded">
-      </div>
-      <div class="project-example" >
-        <h2 class="m1">BenchScraper</h2>
-        <p>Price comparison API based on pricing data scraped from the internet</p>
-        <p>Stack: HTML/CSS, JavaScript, Node.js, Python/Scrapy</p>
-        <div class="project-links">
-          <a href="https://andymond.github.io/benchscraper-fe/">View Deployed App</a>
-          <a href="https://github.com/andymond/benchscraper">View on GitHub</a>
-        </div>
-        <img src="stylesheets/images/benchscraper.png" alt="BenchScraper Screenshot" class="border rounded">
-      </div>
-      <div class="project-example" >
-        <h2 class="m1">RecipeResource</h2>
-        <p>Multitenant recipe management app</p>
-        <p>Stack: Ruby on Rails, PostgreSQL, HTML5/SASS/BASSCSS, JavaScript/jQuery, Google OAuth2, yelp! API</p>
-        <div class="project-links">
-          <a href="https://reciperesource.herokuapp.com/">View Deployed App</a>
-          <a href="https://github.com/andymond/RecipeResource">View on GitHub</a>
-        </div>
-        <img src="stylesheets/images/recipe_resource.png" alt="Recipe Resource Screenshot" class="border rounded">
-      </div>
-      <div class="project-example">
-        <h2 class="m1">BattleShift</h2>
-        <p>API implementation of the game Battleship</p>
-        <p>Brownfield Project</p>
-        <p>Players can view their current games, and play against other players by submitting POST requests</p>
-        <p>Stack: Ruby on Rails, PostgreSQL, HTML5/CSS, Javascript, MailCatcher/Sendgrid</p>
-        <div class="project-links">
-          <a href="https://banana-tart-60248.herokuapp.com/">View Deployed App</a>
-          <a href="https://github.com/andymond/battleshift">View on GitHub</a>
-        </div>
-        <img src="stylesheets/images/battleshift.png" alt="" class="border rounded">
-      </div>
-      <div class="project-example">
-        <h2 class="m1">Rails Engine</h2>
-        <p>A RESTful API to return advanced business anayltics from a sample ecommerce dataset</p>
-        <p>Stack: Ruby on Rails, PostgresQL</p>
-        <a href="https://github.com/andymond/rails_engine">View on GitHub</a>
-        <img src="stylesheets/images/rails_engine.png" alt="" class="border rounded">
-      </div>
-      <div class="project-example">
-        <h2 class="m1">APICurious</h2>
-        <p>GitHub Profile Page recreated by consuming the GitHub API</p>
-        <p>Stack: Ruby on Rails, HTML/SASS/BASSCSS, GitHub API, GitHub OAuth</p>
-        <a href="https://github.com/andymond/apicurious">View on GitHub</a>
-        <img src="stylesheets/images/apicurious.png" alt="" class="border rounded">
-      </div>
-      <div class="project-example">
-        <h2 class="m1">BikeShare</h2>
-        <p>Application to provide users with analytics of a San Francisco area bicyle sharing program and local weather history</p>
-        <p>Application also has a store where users can purchase various items managed by the site admin</p>
-        <p>Stack: Ruby on Rails, HTML/SASS, PostgreSQL</p>
-        <div class="project-links">
-          <a href="http://enigmatic-spire-10343.herokuapp.com/">View Deployed App</a>
-          <a href="https://github.com/amj133/bike-share">View on GitHub</a>
-        </div>
-        <img src="stylesheets/images/bikeshare.png" alt="" class="border rounded">
-      </div>
-      <div class="project-example">
-        <h2 class="m1">Town Bizzare</h2>
-        <p>First web app, created a marketplace for users to browse vendors and their wares</p>
-        <p>Stack: Sinatra, HTML/CSS, PostgreSQL, Google Charts</p>
-        <div class="project-links">
-          <a href="https://github.com/andymond/little-shop-redux">View Deployed App</a>
-          <a href="https://github.com/andymond/little-shop-redux">View on GitHub</a>
-        </div>
-        <img src="stylesheets/images/town_bizzare.png" alt="" class="border rounded">
-      </div>
-    </section>
+        <img class="portrait" src="assets/headshot.jpg" alt="Andy Dymond" width="300" height="380" fetchpriority="high" decoding="async">
+      </section>
 
-    <section id="skills" class="flex justify-center items-center">
-      <div class="languages-frameworks skillset">
-        <h4>Languages & Frameworks</h4>
-        <ul>
-          <li>Ruby / Sinatra / Rails</li>
-          <li>SQL / PostgreSQL / Redis</li>
-          <li>Swift 5 / Xcode</li>
-          <li>HTML5 / CSS / SASS</li>
-          <li>JavaScript / jQuery</li>
-          <li>Node.js / Express / Knex</li>
-          <li>Python / Flask / FastAPI</li>
-        </ul>
-      </div>
-      <div class="testing skillset">
-        <h4>Test-Driven Development & Version Control</h4>
-        <ul>
-          <li>RSpec/Minitest/Capybara</li>
-          <li>Pytest</li>
-          <li>WebMock & VCR</li>
-          <li>Selenium</li>
-          <li>Mocha/Chai</li>
-          <li>Circle CI/Jenkins</li>
-          <li>Git/GitHub</li>
-        </ul>
-      </div>
-      <div class="potential-interests skillset">
-        <h4>Interests & Soft Skills</h4>
-        <ul>
-          <li>Leadership</li>
-          <li>Teamwork</li>
-          <li>Communication</li>
-          <li>AI/Machine Learning</li>
-          <li>Business Technologies</li>
-          <li>Elixir / Phoenix</li>
-        </ul>
-      </div>
-    </section>
+      <section class="work-section" id="work" aria-labelledby="work-title">
+        <div class="wrap">
+          <div class="section-heading">
+            <p class="eyebrow">A few things I’ve worked on</p>
+            <h2 id="work-title">Selected work</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <img src="assets/dobot.jpg" alt="Dobot product website" width="1200" height="700" loading="lazy" decoding="async">
+              <div class="card-copy"><p class="eyebrow">Fintech · Product engineering</p><h3>Dobot</h3><p>Helped maintain a consumer savings product across its Rails API, management portal, iOS app, and public website.</p></div>
+            </article>
+            <article class="project-card">
+              <img src="assets/benchscraper.jpg" alt="BenchScraper application" width="1200" height="700" loading="lazy" decoding="async">
+              <div class="card-copy"><p class="eyebrow">Personal project · Data</p><h3>BenchScraper</h3><p>A price comparison API and web app built around product data collected from the web.</p><a href="https://github.com/andymond/benchscraper" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-card">
+              <img src="assets/reciperesource.jpg" alt="RecipeResource application" width="1200" height="700" loading="lazy" decoding="async">
+              <div class="card-copy"><p class="eyebrow">Personal project · SaaS</p><h3>RecipeResource</h3><p>A multi-tenant recipe management app built with Rails, PostgreSQL, and third-party APIs.</p><a href="https://github.com/andymond/RecipeResource" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a></div>
+            </article>
+          </div>
+          <details class="more-work">
+            <summary>More projects from my earlier work</summary>
+            <ul>
+              <li><a href="https://github.com/andymond/battleshift">BattleShift</a> — a Rails API for a multiplayer Battleship game.</li>
+              <li><a href="https://github.com/andymond/rails_engine">Rails Engine</a> — a REST API for ecommerce analytics.</li>
+              <li><a href="https://github.com/andymond/apicurious">APICurious</a> — a GitHub profile experience built with the GitHub API.</li>
+              <li><a href="https://github.com/amj133/bike-share">BikeShare</a> — bike-share and weather analytics.</li>
+              <li><a href="https://github.com/andymond/little-shop-redux">Town Bizzare</a> — an early marketplace project.</li>
+            </ul>
+          </details>
+        </div>
+      </section>
 
-    <section id="resume">
-      <iframe id="resumeiframe" src="https://resume.creddle.io/embed/hgc2opn29rk" width="850" height="1100" seamless></iframe>
-      <a href="https://drive.google.com/file/d/1XWk8fsh01sEc4kWcaYYjE9xilsYjsbe-/view?usp=sharing"><p>Download</p></a>
-    </section>
+      <section class="about-section wrap" id="about" aria-labelledby="about-title">
+        <div>
+          <p class="eyebrow">Experience</p>
+          <h2 id="about-title">Making complex systems clearer and more useful.</h2>
+          <p>I’m a staff engineer at Housecall Pro, supporting a fintech directorate across a large SaaS platform. My work spans product development, architecture, mentoring, and helping teams ship changes with confidence.</p>
+          <p>Previously, I worked on the Dobot savings app at Fifth Third Bank. Before software, I spent years in fine-dining kitchens—an experience that shaped how I think about teamwork, preparation, and craft.</p>
+        </div>
+        <div class="skills">
+          <h3>Focus areas</h3>
+          <ul>
+            <li>Ruby on Rails · TypeScript · React</li>
+            <li>PostgreSQL · MySQL · Redis</li>
+            <li>Event-driven systems · Kafka</li>
+            <li>Domain design · Service boundaries</li>
+            <li>Technical leadership · Mentoring</li>
+            <li>AI-assisted engineering workflows</li>
+          </ul>
+          <a class="text-link" href="assets/andy-dymond-resume.pdf" download>Full résumé (PDF) <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
 
-    <section id="contact" class="flex flex-column items-center justify-center">
-      <i class="fas fa-envelope m2">&nbsp<a href="mailto:andy.dymond@gmail.com">andy@dymond.dev</i></a>
-      <i class="fas fa-mobile-alt m2">&nbsp<span>(303) 815 2020</span></i>
-      <div class="social-media-bar">
-        <a href="https://www.linkedin.com/in/andydymond/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/andymond"><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com/a__dymond"><i class="fab fa-twitter"></i></a>
-        <a href="https://medium.com/@andy.dymond"><i class="fab fa-medium-m"></i></a>
-      </div>
-    </section>
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="wrap contact-inner">
+          <div><p class="eyebrow">Get in touch</p><h2 id="contact-title">Have a good problem to solve?</h2></div>
+          <a class="button" href="mailto:andy.dymond@gmail.com">Email Andy <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <footer class="wrap footer"><span>© 2026 Andy Dymond</span><a href="#top">Back to top ↑</a></footer>
   </body>
 </html>
