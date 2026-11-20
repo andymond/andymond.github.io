@@ -1,180 +1,89 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Nunito|Nunito+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Andy Dymond is a staff software engineer working across fintech, Rails, TypeScript, and platform architecture.">
+    <meta name="theme-color" content="#f5f5f2">
+    <title>Andy Dymond — Staff Software Engineer</title>
     <link rel="stylesheet" href="stylesheets/main.css">
-    <title>Andy Dymond</title>
   </head>
-
   <body>
-    <section id="portfolio-landing" class="flex flex-column items-center">
-      <h1 class="mt1 mb0">Andy Dymond</h1>
-      <h2 class="m1">Full Stack Developer</h3>
-      <div class="outer-image circle">
-        <img src="stylesheets/images/dymond_headshot_medium.jpg" alt="Andy Dymond Headshot" class="dymond-headshot">
-      </div>
-      <div class="social-media-bar">
-        <a href="https://www.linkedin.com/in/andydymond/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/andymond"><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com/a__dymond"><i class="fab fa-twitter"></i></a>
-        <a href="https://medium.com/@andy.dymond"><i class="fab fa-medium-m"></i></a>
-      </div>
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top"><span>Andy Dymond</span><img src="assets/andy-dymond-avatar.png" alt="" width="240" height="240" fetchpriority="high" decoding="async"></a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#expertise">Expertise</a>
+        <a href="journey.html">My path</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-      <summary class="about-blurb">
-        <p>Turing School of Software & Design, Backend Program</p>
-        <p>I love exploring new technologies, and am particularly interested in working with apps and companies that make an effort to stay socially conscious.</p>
-      </summary>
-    </section>
-
-    <nav class="portfolio-nav m2 flex justify-around">
-      <a id="scrollto-landing">Home</a>
-      <a id="scrollto-projects">Projects</a>
-      <a id="scrollto-skills">Skills</a>
-      <a id="scrollto-resume">Resume</a>
-      <a id="scrollto-contact">Contact</a>
-    </nav>
-
-    <section id="projects-carousel" class="projects">
-      <div class="project-example" >
-        <h2 class="m1">Dobot</h2>
-        <p>Goal Based Savings Application (Where I work now!)</p>
-        <p>Work to maintain static website, Ruby on Rails REST Api & Management Portal, and iOS Application</p>
-        <div class="project-links">
-          <p>Privately owned code</p>
+    <main>
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Staff Software Engineer · Denver, Colorado</p>
+          <h1 id="hero-title">I build thoughtful products that make people’s lives a little easier.</h1>
+          <p class="intro">Most recently, I was Staff Engineer II at Housecall Pro, working across risk, payments, and accounting integrations on a 60,000-tenant Rails platform. I’m looking for a role where I can help build useful products that solve real problems for the people who use them.</p>
+          <div class="actions">
+            <a class="button" href="#work">Work I’ve done</a>
+            <a class="text-link" href="assets/andy-dymond-resume.pdf" download>Download résumé <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="social-links" aria-label="Social profiles">
+            <a href="https://github.com/andymond" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/andydymond/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:andy.dymond@gmail.com">Email</a>
+          </div>
         </div>
-        <img src="stylesheets/images/dobot-static-site.png" alt="BenchScraper Screenshot" class="border rounded">
-      </div>
-      <div class="project-example" >
-        <h2 class="m1">BenchScraper</h2>
-        <p>Price comparison API based on pricing data scraped from the internet</p>
-        <p>Stack: HTML/CSS, JavaScript, Node.js, Python/Scrapy</p>
-        <div class="project-links">
-          <a href="https://andymond.github.io/benchscraper-fe/">View Deployed App</a>
-          <a href="https://github.com/andymond/benchscraper">View on GitHub</a>
-        </div>
-        <img src="stylesheets/images/benchscraper.png" alt="BenchScraper Screenshot" class="border rounded">
-      </div>
-      <div class="project-example" >
-        <h2 class="m1">RecipeResource</h2>
-        <p>Multitenant recipe management app</p>
-        <p>Stack: Ruby on Rails, PostgreSQL, HTML5/SASS/BASSCSS, JavaScript/jQuery, Google OAuth2, yelp! API</p>
-        <div class="project-links">
-          <a href="https://reciperesource.herokuapp.com/">View Deployed App</a>
-          <a href="https://github.com/andymond/RecipeResource">View on GitHub</a>
-        </div>
-        <img src="stylesheets/images/recipe_resource.png" alt="Recipe Resource Screenshot" class="border rounded">
-      </div>
-      <div class="project-example">
-        <h2 class="m1">BattleShift</h2>
-        <p>API implementation of the game Battleship</p>
-        <p>Brownfield Project</p>
-        <p>Players can view their current games, and play against other players by submitting POST requests</p>
-        <p>Stack: Ruby on Rails, PostgreSQL, HTML5/CSS, Javascript, MailCatcher/Sendgrid</p>
-        <div class="project-links">
-          <a href="https://banana-tart-60248.herokuapp.com/">View Deployed App</a>
-          <a href="https://github.com/andymond/battleshift">View on GitHub</a>
-        </div>
-        <img src="stylesheets/images/battleshift.png" alt="" class="border rounded">
-      </div>
-      <div class="project-example">
-        <h2 class="m1">Rails Engine</h2>
-        <p>A RESTful API to return advanced business anayltics from a sample ecommerce dataset</p>
-        <p>Stack: Ruby on Rails, PostgresQL</p>
-        <a href="https://github.com/andymond/rails_engine">View on GitHub</a>
-        <img src="stylesheets/images/rails_engine.png" alt="" class="border rounded">
-      </div>
-      <div class="project-example">
-        <h2 class="m1">APICurious</h2>
-        <p>GitHub Profile Page recreated by consuming the GitHub API</p>
-        <p>Stack: Ruby on Rails, HTML/SASS/BASSCSS, GitHub API, GitHub OAuth</p>
-        <a href="https://github.com/andymond/apicurious">View on GitHub</a>
-        <img src="stylesheets/images/apicurious.png" alt="" class="border rounded">
-      </div>
-      <div class="project-example">
-        <h2 class="m1">BikeShare</h2>
-        <p>Application to provide users with analytics of a San Francisco area bicyle sharing program and local weather history</p>
-        <p>Application also has a store where users can purchase various items managed by the site admin</p>
-        <p>Stack: Ruby on Rails, HTML/SASS, PostgreSQL</p>
-        <div class="project-links">
-          <a href="http://enigmatic-spire-10343.herokuapp.com/">View Deployed App</a>
-          <a href="https://github.com/amj133/bike-share">View on GitHub</a>
-        </div>
-        <img src="stylesheets/images/bikeshare.png" alt="" class="border rounded">
-      </div>
-      <div class="project-example">
-        <h2 class="m1">Town Bizzare</h2>
-        <p>First web app, created a marketplace for users to browse vendors and their wares</p>
-        <p>Stack: Sinatra, HTML/CSS, PostgreSQL, Google Charts</p>
-        <div class="project-links">
-          <a href="https://github.com/andymond/little-shop-redux">View Deployed App</a>
-          <a href="https://github.com/andymond/little-shop-redux">View on GitHub</a>
-        </div>
-        <img src="stylesheets/images/town_bizzare.png" alt="" class="border rounded">
-      </div>
-    </section>
+      </section>
 
-    <section id="skills" class="flex justify-center items-center">
-      <div class="languages-frameworks skillset">
-        <h4>Languages & Frameworks</h4>
-        <ul>
-          <li>Ruby / Sinatra / Rails</li>
-          <li>SQL / PostgreSQL / Redis</li>
-          <li>Swift 5 / Xcode</li>
-          <li>HTML5 / CSS / SASS</li>
-          <li>JavaScript / jQuery</li>
-          <li>Node.js / Express / Knex</li>
-          <li>Python / Flask / FastAPI</li>
-        </ul>
-      </div>
-      <div class="testing skillset">
-        <h4>Test-Driven Development & Version Control</h4>
-        <ul>
-          <li>RSpec/Minitest/Capybara</li>
-          <li>Pytest</li>
-          <li>WebMock & VCR</li>
-          <li>Selenium</li>
-          <li>Mocha/Chai</li>
-          <li>Circle CI/Jenkins</li>
-          <li>Git/GitHub</li>
-        </ul>
-      </div>
-      <div class="potential-interests skillset">
-        <h4>Interests & Soft Skills</h4>
-        <ul>
-          <li>Leadership</li>
-          <li>Teamwork</li>
-          <li>Communication</li>
-          <li>AI/Machine Learning</li>
-          <li>Business Technologies</li>
-          <li>Elixir / Phoenix</li>
-        </ul>
-      </div>
-    </section>
+      <section class="work-section" id="work" aria-labelledby="work-title">
+        <div class="wrap">
+          <div class="section-heading"><p class="eyebrow">Housecall Pro · 2020–2026</p><h2 id="work-title">Selected work</h2></div>
+          <div class="project-grid">
+            <article class="project-card"><div class="card-copy"><p class="eyebrow">Risk domain</p><h3>Reworking risk decisions</h3><p>I reshaped the domain so different risk events could use vendors, in-house models, or on-prem solutions. That removed about 200 ms of vendor latency in affected flows and made the domain easier to extract.</p></div></article>
+            <article class="project-card"><div class="card-copy"><p class="eyebrow">Accounting integrations</p><h3>QuickBooks Online & Desktop</h3><p>I’ve worked with both QuickBooks API families and webhook-based integrations as part of keeping financial workflows in sync across systems.</p></div></article>
+            <article class="project-card"><div class="card-copy"><p class="eyebrow">Data protection</p><h3>Controls across four storage systems</h3><p>I built sensitive-data detection and blocking across MySQL, PostgreSQL/Aurora, Redis, and S3, then led a repeatable cleanup of about 52 million records.</p></div></article>
+          </div>
+        </div>
+      </section>
 
-    <section id="resume">
-      <iframe id="resumeiframe" src="https://resume.creddle.io/embed/hgc2opn29rk" width="850" height="1100" seamless></iframe>
-      <a href="https://drive.google.com/file/d/1XWk8fsh01sEc4kWcaYYjE9xilsYjsbe-/view?usp=sharing"><p>Download</p></a>
-    </section>
+      <section class="about-section wrap" id="expertise" aria-labelledby="expertise-title">
+        <div>
+          <p class="eyebrow">How I work</p>
+          <h2 id="expertise-title">I care about building useful products with teams that care about the details.</h2>
+          <p>Most of my work starts with understanding what a system actually does, then getting the right people together to decide what to change. I’ve moved between individual contributor, engineering manager, and staff roles; I still make time for mentoring and architecture reviews.</p>
+          <a class="text-link" href="assets/andy-dymond-resume.pdf" download>Full résumé (PDF) <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="skills">
+          <h3>Current toolkit</h3>
+          <ul>
+            <li>Ruby · Rails · TypeScript · React · Java</li>
+            <li>PostgreSQL/Aurora · MySQL · Redis</li>
+            <li>Kafka · Karafka · Amazon SQS</li>
+            <li>Domain-driven design · Modularization</li>
+            <li>Observability · Sentry · Datadog</li>
+            <li>AI-assisted engineering workflows</li>
+          </ul>
+        </div>
+      </section>
 
-    <section id="contact" class="flex flex-column items-center justify-center">
-      <i class="fas fa-envelope m2">&nbsp<a href="mailto:andy.dymond@gmail.com">andy@dymond.dev</i></a>
-      <i class="fas fa-mobile-alt m2">&nbsp<span>(303) 815 2020</span></i>
-      <div class="social-media-bar">
-        <a href="https://www.linkedin.com/in/andydymond/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/andymond"><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com/a__dymond"><i class="fab fa-twitter"></i></a>
-        <a href="https://medium.com/@andy.dymond"><i class="fab fa-medium-m"></i></a>
-      </div>
-    </section>
+      <section class="experience-section work-section" aria-labelledby="experience-title">
+        <div class="wrap">
+          <div class="section-heading"><p class="eyebrow">Experience</p><h2 id="experience-title">Places I’ve worked</h2></div>
+          <div class="experience-list">
+            <article><p class="eyebrow">Nov 2020 — Nov 2026 · Remote</p><h3><img class="role-photo" src="assets/housecall-pro-era.png" alt="" width="160" height="160" loading="lazy" decoding="async">Staff Engineer II · Housecall Pro</h3><p>I joined as Software Engineer II and progressed through Senior Engineer, Engineering Manager, Staff Engineer I and II, and Directorate Staff. I led a 4–5 engineer team from 2023–2025, then partnered with Risk on architecture across fintech.</p><p>At directorate level, I wrote a Rails conventions RFC adopted across ~10 squads, contributed to AI agent tooling, led a no-disruption Stripe migration for ~30,000 tokens, and built Redis email rate limiting after the vendor fell short on volume and latency.</p></article>
+            <article><p class="eyebrow">Jul 2017 — Nov 2020 · Denver</p><h3><img class="role-photo" src="assets/fifth-third-era.png" alt="" width="160" height="160" loading="lazy" decoding="async">Software Developer · Fifth Third Bank</h3><p>At Fifth Third, I joined the Dobot team and revived a sunset Rails backend for its consumer savings app, making core banking flows supportable and easier to extend. I modernized API endpoints, built iOS features for the app, and developed Python microservices to verify auth tokens for secure backend access.</p></article>
+          </div>
+          <a class="journey-link" href="journey.html">How I got here <span aria-hidden="true">↗</span><span>From fine-dining kitchens to software engineering</span></a>
+        </div>
+      </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="scripts/main.js"></script>
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="wrap contact-inner"><div><p class="eyebrow">Get in touch</p><h2 id="contact-title">Want to connect?</h2></div><a class="button" href="mailto:andy.dymond@gmail.com">Email me <span aria-hidden="true">↗</span></a></div>
+      </section>
+    </main>
+
+    <footer class="wrap footer"><span>© 2026 Andy Dymond</span><a href="#top">Back to top ↑</a></footer>
   </body>
 </html>
