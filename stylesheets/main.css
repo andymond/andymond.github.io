@@ -292,7 +292,9 @@ a:hover { color: var(--green); }
 p { padding: 0; font-family: inherit; font-size: 1rem; }
 .wrap { width: min(1100px, calc(100% - 48px)); margin-inline: auto; }
 .site-header { height: 76px; width: min(1240px, calc(100% - 48px)); margin: auto; display: flex; align-items: center; justify-content: space-between; }
-.wordmark { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 1.12rem; font-weight: 500; text-decoration: none; letter-spacing: -.03em; }
+.wordmark { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 9px; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 1.12rem; font-weight: 500; text-decoration: none; letter-spacing: -.03em; }
+.wordmark img { display: block; width: 36px; height: 36px; flex: 0 0 auto; border: 1px solid var(--line); border-radius: 50%; object-fit: cover; transition: transform 180ms ease-out; transform-origin: left center; }
+.wordmark:hover img, .wordmark:focus-visible img { transform: scale(2.35); }
 nav, .social-links { display: flex; gap: clamp(16px, 3vw, 34px); }
 nav a, .social-links a { color: var(--muted); font-size: .9rem; text-decoration: none; }
 .hero { min-height: 570px; padding-block: 82px 90px; display: grid; grid-template-columns: minmax(0, 850px); align-items: center; }
@@ -358,7 +360,7 @@ h1, h2, h3, p { margin-top: 0; }
   .more-work ul { grid-template-columns: 1fr; }
   .contact-inner { align-items: flex-start; flex-direction: column; }
 }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .wordmark img { transition: none; } }
 .experience-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; }
 .experience-list article { padding-top: 22px; border-top: 1px solid #cbd4cb; }
 .experience-list h3 { margin-bottom: 10px; font-size: 1.25rem; }
