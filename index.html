@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Andy Dymond is a staff software engineer building full-stack products and reliable systems.">
+    <meta name="description" content="Andy Dymond is a staff software engineer working across fintech, Rails, TypeScript, and platform architecture.">
     <meta name="theme-color" content="#f5f5f2">
     <title>Andy Dymond — Staff Software Engineer</title>
     <link rel="stylesheet" href="stylesheets/main.css">
@@ -13,7 +13,8 @@
       <a class="wordmark" href="#top">Andy Dymond</a>
       <nav aria-label="Main navigation">
         <a href="#work">Work</a>
-        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="journey.html">My path</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -21,11 +22,11 @@
     <main>
       <section class="hero wrap" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Denver, Colorado · Staff Software Engineer</p>
-          <h1 id="hero-title">I build thoughtful software for real people.</h1>
-          <p class="intro">Full-stack product engineering at scale, with a focus on Ruby on Rails, TypeScript, event-driven systems, and making complex domains easier to work in.</p>
+          <p class="eyebrow">Staff Engineer II · Housecall Pro · Denver, Colorado</p>
+          <h1 id="hero-title">I make complex software easier to build and trust.</h1>
+          <p class="intro">Nine-plus years in fintech and SaaS, including staff-level product engineering across a 60,000-tenant platform. I work across Rails architecture, event-driven systems, and engineering leadership.</p>
           <div class="actions">
-            <a class="button" href="#work">Explore selected work</a>
+            <a class="button" href="#work">Selected work</a>
             <a class="text-link" href="assets/andy-dymond-resume.pdf" download>Download résumé <span aria-hidden="true">↗</span></a>
           </div>
           <div class="social-links" aria-label="Social profiles">
@@ -34,68 +35,52 @@
             <a href="mailto:andy.dymond@gmail.com">Email</a>
           </div>
         </div>
-        <img class="portrait" src="assets/headshot.jpg" alt="Andy Dymond" width="300" height="380" fetchpriority="high" decoding="async">
       </section>
 
       <section class="work-section" id="work" aria-labelledby="work-title">
         <div class="wrap">
-          <div class="section-heading">
-            <p class="eyebrow">A few things I’ve worked on</p>
-            <h2 id="work-title">Selected work</h2>
-          </div>
+          <div class="section-heading"><p class="eyebrow">Housecall Pro · Fintech</p><h2 id="work-title">Recent work</h2></div>
           <div class="project-grid">
-            <article class="project-card">
-              <img src="assets/dobot.jpg" alt="Dobot product website" width="1200" height="700" loading="lazy" decoding="async">
-              <div class="card-copy"><p class="eyebrow">Fintech · Product engineering</p><h3>Dobot</h3><p>Helped maintain a consumer savings product across its Rails API, management portal, iOS app, and public website.</p></div>
-            </article>
-            <article class="project-card">
-              <img src="assets/benchscraper.jpg" alt="BenchScraper application" width="1200" height="700" loading="lazy" decoding="async">
-              <div class="card-copy"><p class="eyebrow">Personal project · Data</p><h3>BenchScraper</h3><p>A price comparison API and web app built around product data collected from the web.</p><a href="https://github.com/andymond/benchscraper" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a></div>
-            </article>
-            <article class="project-card">
-              <img src="assets/reciperesource.jpg" alt="RecipeResource application" width="1200" height="700" loading="lazy" decoding="async">
-              <div class="card-copy"><p class="eyebrow">Personal project · SaaS</p><h3>RecipeResource</h3><p>A multi-tenant recipe management app built with Rails, PostgreSQL, and third-party APIs.</p><a href="https://github.com/andymond/RecipeResource" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a></div>
-            </article>
+            <article class="project-card"><div class="card-copy"><p class="eyebrow">Risk platform</p><h3>More flexible risk decisions</h3><p>Reshaped the risk domain to support multiple vendors, in-house models, and on-prem solutions. Removed about 200 ms from affected flows and made the domain easier to extract from the Rails monolith.</p></div></article>
+            <article class="project-card"><div class="card-copy"><p class="eyebrow">Platform workflows</p><h3>Reliable event-driven services</h3><p>Designed Karafka services around the transactional outbox pattern, bringing dependable domain events to workflows across a large, multi-team platform.</p></div></article>
+            <article class="project-card"><div class="card-copy"><p class="eyebrow">Payments & data protection</p><h3>Safer systems at scale</h3><p>Led a zero-disruption migration of roughly 30,000 Stripe card tokens and built sensitive-data controls across databases, Redis, and S3, supporting remediation of 52 million records.</p></div></article>
           </div>
-          <details class="more-work">
-            <summary>More projects from my earlier work</summary>
-            <ul>
-              <li><a href="https://github.com/andymond/battleshift">BattleShift</a> — a Rails API for a multiplayer Battleship game.</li>
-              <li><a href="https://github.com/andymond/rails_engine">Rails Engine</a> — a REST API for ecommerce analytics.</li>
-              <li><a href="https://github.com/andymond/apicurious">APICurious</a> — a GitHub profile experience built with the GitHub API.</li>
-              <li><a href="https://github.com/amj133/bike-share">BikeShare</a> — bike-share and weather analytics.</li>
-              <li><a href="https://github.com/andymond/little-shop-redux">Town Bizzare</a> — an early marketplace project.</li>
-            </ul>
-          </details>
         </div>
       </section>
 
-      <section class="about-section wrap" id="about" aria-labelledby="about-title">
+      <section class="about-section wrap" id="expertise" aria-labelledby="expertise-title">
         <div>
-          <p class="eyebrow">Experience</p>
-          <h2 id="about-title">Making complex systems clearer and more useful.</h2>
-          <p>I’m a staff engineer at Housecall Pro, supporting a fintech directorate across a large SaaS platform. My work spans product development, architecture, mentoring, and helping teams ship changes with confidence.</p>
-          <p>Previously, I worked on the Dobot savings app at Fifth Third Bank. Before software, I spent years in fine-dining kitchens—an experience that shaped how I think about teamwork, preparation, and craft.</p>
+          <p class="eyebrow">How I work</p>
+          <h2 id="expertise-title">Product-minded engineering with a systems view.</h2>
+          <p>I partner with teams on architecture, execution, and technical direction. I’ve worked as an individual contributor, engineering manager, and directorate-level architecture partner, and I enjoy helping engineers grow into broader ownership.</p>
+          <a class="text-link" href="assets/andy-dymond-resume.pdf" download>Full résumé (PDF) <span aria-hidden="true">↗</span></a>
         </div>
         <div class="skills">
-          <h3>Focus areas</h3>
+          <h3>Current toolkit</h3>
           <ul>
-            <li>Ruby on Rails · TypeScript · React</li>
-            <li>PostgreSQL · MySQL · Redis</li>
-            <li>Event-driven systems · Kafka</li>
-            <li>Domain design · Service boundaries</li>
-            <li>Technical leadership · Mentoring</li>
+            <li>Ruby · Rails · TypeScript · React · Java</li>
+            <li>PostgreSQL/Aurora · MySQL · Redis</li>
+            <li>Kafka · Karafka · Amazon SQS</li>
+            <li>Domain-driven design · Modularization</li>
+            <li>Observability · Sentry · Datadog</li>
             <li>AI-assisted engineering workflows</li>
           </ul>
-          <a class="text-link" href="assets/andy-dymond-resume.pdf" download>Full résumé (PDF) <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="experience-section work-section" aria-labelledby="experience-title">
+        <div class="wrap">
+          <div class="section-heading"><p class="eyebrow">Experience</p><h2 id="experience-title">Where I’ve made an impact</h2></div>
+          <div class="experience-list">
+            <article><p class="eyebrow">Nov 2020 — Present · Remote</p><h3>Staff Engineer II · Housecall Pro</h3><p>Technical leadership across the fintech directorate: architecture partner to risk, reviewer across payments and invoices, mentor to engineers, and former manager of a 4–5 person squad.</p></article>
+            <article><p class="eyebrow">Jul 2017 — Nov 2020 · Denver</p><h3>Software Developer · Fifth Third Bank</h3><p>Rehabilitated the Rails backend for the Dobot consumer savings app, maintained reliable CI/CD, and built Python services for secure authentication flows.</p></article>
+          </div>
+          <a class="journey-link" href="journey.html">How I got here <span aria-hidden="true">↗</span><span>From fine-dining kitchens to software engineering</span></a>
         </div>
       </section>
 
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="wrap contact-inner">
-          <div><p class="eyebrow">Get in touch</p><h2 id="contact-title">Have a good problem to solve?</h2></div>
-          <a class="button" href="mailto:andy.dymond@gmail.com">Email Andy <span aria-hidden="true">↗</span></a>
-        </div>
+        <div class="wrap contact-inner"><div><p class="eyebrow">Get in touch</p><h2 id="contact-title">Have a good problem to solve?</h2></div><a class="button" href="mailto:andy.dymond@gmail.com">Email Andy <span aria-hidden="true">↗</span></a></div>
       </section>
     </main>
 
