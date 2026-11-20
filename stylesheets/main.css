@@ -360,10 +360,12 @@ h1, h2, h3, p { margin-top: 0; }
   .more-work ul { grid-template-columns: 1fr; }
   .contact-inner { align-items: flex-start; flex-direction: column; }
 }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .wordmark img { transition: none; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .wordmark img, .role-photo { transition: none; } }
 .experience-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; }
 .experience-list article { padding-top: 22px; border-top: 1px solid #cbd4cb; }
-.experience-list h3 { margin-bottom: 10px; font-size: 1.25rem; }
+.experience-list h3 { display: flex; align-items: center; gap: 16px; margin-bottom: 10px; font-size: 1.25rem; }
+.role-photo { display: block; width: 44px; height: 44px; flex: 0 0 auto; border: 1px solid var(--line); border-radius: 50%; object-fit: cover; transition: transform 180ms ease-out; transform-origin: center; }
+.role-photo:hover { position: relative; z-index: 1; transform: scale(1.6); }
 .experience-list article p:not(.eyebrow) { color: var(--muted); font-size: .94rem; }
 .journey-link { display: grid; gap: 3px; width: fit-content; margin-top: 38px; color: var(--green); font-weight: 750; text-decoration: none; }
 .journey-link span:last-child { color: var(--muted); font-size: .85rem; font-weight: 400; }
